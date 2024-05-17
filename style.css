@@ -279,7 +279,7 @@ header .master_play .bar{
 
 header .master_play .bar .bar2{
 	position: absolute;
-	width: 20%;
+	width: 0%;
 	height: 100%;
 	background: #36e2ec;
 	top: 0;
@@ -538,12 +538,12 @@ header .song_side .content .buttons button:nth-child(2){
 	border: 2px solid #36e2ec;
 	background: none;
 	color: #36e2ec;
-} */
+} 
 
 header .song_side .content .buttons button:nth-child(2):hover{
 	border: 2px solid #36e2ec;
 	background: #36e2ec;
-	color: #fff;
+	color: #fff;	
 }
 
 header .song_side .popular_song{
@@ -640,7 +640,7 @@ header .song_side .popular_artists{
 	height: auto;
 	/* border: 1px solid #fff; */
 	margin: auto;
-	margin-top: 15px;
+	margin-top: 30px;
 }
 
 header .song_side .popular_artists .h4{
