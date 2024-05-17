@@ -16,83 +16,242 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
     <header>
       <div class="menu_side">
         <h1>Playlist</h1>
         <div class="playlist">
-          <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i> Playlist</h4>
-          <h4><span></span><i class="bi bi-music-note-beamed"></i> Last Listening</h4>
-          <h4><span></span><i class="bi bi-music-note-beamed"></i> Recommended</h4>
+          <h4 class="active">
+            <span></span><i class="bi bi-music-note-beamed"></i> Playlist
+          </h4>
+          <h4>
+            <span></span><i class="bi bi-music-note-beamed"></i> Last Listening
+          </h4>
+          <h4>
+            <span></span><i class="bi bi-music-note-beamed"></i> Recommended
+          </h4>
         </div>
 
         <div class="menu_song">
           <li class="songItem">
             <span>01</span>
-            <img src="/assests/img/mck.jpg" alt="MCK">
+            <img src="/assests/img/mck.jpg" alt="MCK" />
             <h5>
               Anh Đã Ổn Hơn
               <div class="subtitle">MCK</div>
-            </h5> 
-              <i class="bi playListPlay bi-play-circle-fill" id="1" ></i>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
           </li>
 
           <li class="songItem">
             <span>02</span>
-            <img src="/assests/img/bray.jpg" alt="Bray">
+            <img src="/assests/img/bray.jpg" alt="Bray" />
             <h5>
               Hoàn Hảo
               <div class="subtitle">Bray</div>
-            </h5> 
-              <i class="bi playListPlay bi-play-circle-fill" id="2" ></i>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
           </li>
 
           <li class="songItem">
             <span>03</span>
-            <img src="/assests/img/obito.jpg" alt="Obito">
+            <img src="/assests/img/obito.jpg" alt="Obito" />
             <h5>
               Đánh Đổi
               <div class="subtitle">Obito</div>
-            </h5> 
-              <i class="bi playListPlay bi-play-circle-fill" id="3" ></i>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
           </li>
 
           <li class="songItem">
             <span>04</span>
-            <img src="/assests/img/lowg.jpg" alt="Low G">
+            <img src="/assests/img/lowg.jpg" alt="Low G" />
             <h5>
               Quá Sớm
               <div class="subtitle">Low G</div>
-            </h5> 
-              <i class="bi playListPlay bi-play-circle-fill" id="4" ></i>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
           </li>
 
           <li class="songItem">
             <span>05</span>
-            <img src="/assests/img/Karik.jpg" alt="Karik">
+            <img src="/assests/img/Karik.jpg" alt="Karik" />
             <h5>
               Bạn Đời
               <div class="subtitle">Karik</div>
-            </h5> 
-              <i class="bi playListPlay bi-play-circle-fill" id="5" ></i>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
           </li>
 
           <li class="songItem">
             <span>06</span>
-            <img src="/assests/img/24kright.jpg" alt="24kright">
+            <img src="/assests/img/24kright.jpg" alt="24kright" />
             <h5>
               Mai Linh
               <div class="subtitle">24k Right</div>
-            </h5> 
-              <i class="bi playListPlay bi-play-circle-fill" id="6" ></i>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
           </li>
         </div>
       </div>
 
+      <div class="song_side">
+        <img src="./assests/img/mck_bg-removebg_backup.png" alt="">
+        <nav>
+          <ul>
+            <li>Discover <span></span></li>
+            <li>MY LIBRARY</li>
+            <li>RADIO</li>
+          </ul>
 
-      <div class="song_side"></div>
+          <div class="search">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="Search Music..." />
+          </div>
+
+          <div class="user">
+            <img src="./assests/img/hai.jpg" alt="user" title="Ngoc Hai" />
+          </div>
+        </nav>
+
+        <div class="content">
+          <h1>MCK</h1>
+          <p>
+            Nguyễn Vũ Hoàng Long, commonly known by his stage names MCK, Nger,<br>
+            or Ngơ, is a Vietnamese male rapper, singer, and songwriter.
+          </p>
+
+          <div class="buttons">
+            <button>PLAY</button>
+            <button>FOLLOW</button>
+          </div>
+        </div>
+
+        <div class="popular_song">
+          <div class="h4">
+            <h4>popular song</h4>
+            <div class="btn_s">
+              <i id="left_scroll" class="bi bi-arrow-left-short"></i>
+              <i id="right_scroll" class="bi bi-arrow-right-short"></i>
+            </div>
+          </div>
+
+          <div class="pop_song">
+            <li class="songItem">
+              <div class="img_play">
+                <img src="./assests/img/taivisao.jpg" alt="MCK">
+                <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+              </div>
+
+              <h5>TẠI VÌ SAO
+                <br>
+                <div class="subtitle">MCK</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="./assests/img/no_boundary.jpg" alt="MCK">
+                <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+              </div>
+
+              <h5>No Boundary
+                <br>
+                <div class="subtitle">OBITO x RICHIE D.ICY</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="./assests/img/taivisao.jpg" alt="MCK">
+                <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+              </div>
+
+              <h5>Mai Linh
+                <br>
+                <div class="subtitle">24k Right</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="./assests/img/taivisao.jpg" alt="MCK">
+                <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+              </div>
+
+              <h5>Mai Linh
+                <br>
+                <div class="subtitle">24k Right</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="./assests/img/taivisao.jpg" alt="MCK">
+                <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+              </div>
+
+              <h5>Mai Linh
+                <br>
+                <div class="subtitle">24k Right</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="./assests/img/taivisao.jpg" alt="MCK">
+                <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+              </div>
+
+              <h5>Mai Linh
+                <br>
+                <div class="subtitle">24k Right</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="./assests/img/taivisao.jpg" alt="MCK">
+                <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+              </div>
+
+              <h5>Mai Linh
+                <br>
+                <div class="subtitle">24k Right</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="./assests/img/taivisao.jpg" alt="MCK">
+                <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+              </div>
+
+              <h5>Mai Linh
+                <br>
+                <div class="subtitle">24k Right</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="./assests/img/taivisao.jpg" alt="MCK">
+                <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+              </div>
+
+              <h5>Mai Linh
+                <br>
+                <div class="subtitle">24k Right</div>
+              </h5>
+            </li>
+          </div>
+        </div>
+      </div>
 
       <div class="master_play">
         <div class="wave">
@@ -100,18 +259,31 @@
           <div class="wave1"></div>
           <div class="wave1"></div>
         </div>
-        <img src="./assests/img/mck.jpg" alt="MCK">
-        <h5> Anh Đã Ổn Hơn <br>
+        <img src="./assests/img/mck.jpg" alt="MCK" />
+        <h5>
+          Anh Đã Ổn Hơn <br />
           <div class="subtitle">MCK</div>
-        </h5> 
+        </h5>
         <div class="icon">
           <i class="bi bi-skip-start-fill"></i>
           <i class="bi bi-play-fill"></i>
           <i class="bi bi-skip-end-fill"></i>
         </div>
         <span id="currentStart">0:00</span>
+
+        <div class="bar">
+          <input type="range" id="seek" min="0" value="0" max="100" />
+          <div class="bar2" id="bar2"></div>
+          <div class="dot"></div>
+        </div>
         <span id="currentEnd">0:00</span>
 
+        <div class="vol">
+          <i class="bi bi-volume-down-fill"></i>
+          <input type="range" id="vol" min="0" value="0" max="100" />
+          <div class="vol_bar"></div>
+          <div class="dot" id="vol_dot"></div>
+        </div>
       </div>
     </header>
 
