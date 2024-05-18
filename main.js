@@ -1,4 +1,5 @@
-const music = new Audio(`assets/img/mck.jpg`);
+const music = new Audio("./assets/audio/arjit/1.mp3");
+// music.play();
 
 //tao aray
 const songs = [
@@ -90,7 +91,7 @@ const makeAllplays = () =>{
 }
 
 const makeAllBackgrounds = () =>{
-    Array.from(document.getElementsByClassName('playListPlay')).forEach((element)=>{
+    Array.from(document.getElementsByClassName('songItem')).forEach((element)=>{
         element.style.background = "rgb(105, 105, 170, 0)";
     })
 }
@@ -116,12 +117,12 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((element)=>{
             let{songName} = ele;
             title.innerHTML = songName;
         })
-        masterPlay.classList.remute('bi-play-fill');
+        masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
-        wave.classList.remove('active2');
+        wave.classList.add('active2');
         music.addEventListener('ended',() =>{
             masterPlay.classList.add('bi-play-fill');
-            masterPlay.classList.remute('bi-pause-fill');
+            masterPlay.classList.remove('bi-pause-fill');
             wave,classList.remove('active2');
         })
         makeAllBackgrounds();
@@ -173,8 +174,29 @@ music.addEventListener('ended', () =>{
 
 let vol_icon = document.getElementById('vol_icon');
 let vol = document.getElementById('vol');
-let vot_bot = document.getElementById('vol_bot');
-let vol_bar = document.getElementsByClassName('dot')[0];
+let vot_bot = document.getElementById('vol_dot');
+let vol_bar = document.getElementsByClassName('vol_bar')[0];
 
+vol.addEventListener('change', ()=>{
+    if(vol.value == 0){
+        vol_icon.classList.remove('bi bi-volume-down-fill');
+        vol_icon.classList.add('bi bi-volume-mute-fill');
+        vol_icon.classList.remove('bi bi-volume-up-fill');
+    }
+    if(vol.value > 0){
+        vol_icon.classList.add('bi bi-volume-down-fill');
+        vol_icon.classList.remove('bi bi-volume-mute-fill');
+        vol_icon.classList.remove('bi bi-volume-up-fill');
+    }
+    if(vol.value > 50){
+        vol_icon.classList.remove('bi bi-volume-down-fill');
+        vol_icon.classList.remove('bi bi-volume-mute-fill');
+        vol_icon.classList.add('bi bi-volume-up-fill');
+    }
 
+    let vol_a = vol.value;
+    vol_bar.style.width = `${vol_a}%`;
+    vol_dot.style.width = `${vol_a}%`;
+    music.volume = vol_a/100;
+})
 
